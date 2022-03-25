@@ -16,6 +16,17 @@ where credit between 3 and 5;
 -- Thay đổi mã lớp(ClassID) của sinh viên có tên ‘Hung’ là 2.
 
 update student
-set studentid = 4
+set classid = 2
 where studentname = 'hung';
 select*from student;
+
+-- Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.
+select student.studentname,`subject`.subname, mark.mark
+from student
+left join mark
+on student.studentid = mark.studentid
+left join `subject`
+on mark.subid = `subject`.subid;
+
+
+
