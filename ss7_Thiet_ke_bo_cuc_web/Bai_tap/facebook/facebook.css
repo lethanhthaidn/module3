@@ -1,0 +1,42 @@
+
+body{
+    margin: 0;
+    font-family: Corbel;
+}
+
+main{
+    display: flex;
+    padding-top: 80px;
+}
+header {
+    background: black;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+}
+
+nav{
+    background: gold;
+    flex: 15%;
+    position: fixed;
+    left: 0;
+}
+
+article{
+    background: aqua;
+    flex: 85%;
+}
+
+aside{
+    background: fuchsia;
+    flex: 15%;
+    position: fixed;
+    right: 0;
+}
+footer{
+    background-color: blue;
+    height: auto;
+    text-align: center;
+    font-size: 45px;
+}
+
