@@ -1,0 +1,8 @@
+bean/Products.java
+ bean.Products
+service/ProductService.java
+ service.ProductService
+service/ProductServiceImpl.java
+ service.ProductServiceImpl
+controller/ProductServlet.java
+ controller.ProductServlet
