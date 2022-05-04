@@ -18,8 +18,6 @@
 </head>
 <body>
     <h1>Product List</h1>
-
-    <%--            <a href="${pageContext.request.contextPath}/product?action=create">Create new product</a>--%>
     <table border="1">
         <tr>
             <th>ID</th>

@@ -123,8 +123,7 @@ where exists(
             hd.ma_dich_vu = dv.ma_dv
             and (year(hd.NGAY_KET_THUC) = '2021')
 )
-group by dv.MA_DV, dv.TEN_DV
-;
+group by dv.MA_DV, dv.TEN_DV;
 
 
 

@@ -57,14 +57,12 @@ public class ProductServlet extends HttpServlet {
     private void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         productService.delete(id);
-//        response.sendRedirect(request.getContextPath()+"/product?action=list");
         response.sendRedirect("/product?action=list");
     }
 
     private void showUpdate(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         request.setAttribute("id",id);
-//        response.sendRedirect("/product?action=update");
         request.getRequestDispatcher("product/update.jsp").forward(request, response);
     }
 
